@@ -344,10 +344,14 @@ export function jsxDEV(type, config, maybeKey, source, self) {
 /**
  * Create and return a new ReactElement of the given type.
  * See https://reactjs.org/docs/react-api.html#createelement
+ * HERE'S LA POSTA
  */
 export function createElement(type, config, children) {
   let propName;
-
+  console.log('WELCOME TO THE JUNGLE', type)
+  if (type === 'div') {
+    type = Symbol.for('react.fragment')
+  }
   // Reserved names are extracted
   const props = {};
 

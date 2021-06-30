@@ -6,7 +6,7 @@
  *
  * @flow
  */
-
+// ALL TAGS THAT THE FIBER GENERATES
 export type WorkTag =
   | 0
   | 1

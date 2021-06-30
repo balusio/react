@@ -34,6 +34,7 @@ export let REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
 export let REACT_OFFSCREEN_TYPE = 0xeae2;
 export let REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
 
+// HERE'S THE DEFINITIONS FOR SYMBOLS
 if (typeof Symbol === 'function' && Symbol.for) {
   const symbolFor = Symbol.for;
   REACT_ELEMENT_TYPE = symbolFor('react.element');
